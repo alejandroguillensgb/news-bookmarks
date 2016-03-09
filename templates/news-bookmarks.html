@@ -1,0 +1,18 @@
+<ion-view mz-screen view-title="{{ 'bookmarks_title' | translate }}" cache-view="false">
+    <ion-nav-bar class="bar-balanced purple">
+	    <ion-nav-buttons side="left">
+	       	<button class="button button-icon button-clear ion-chevron-left" ng-click="goBack()">
+	      	</button>
+	    </ion-nav-buttons>
+  	</ion-nav-bar>
+    <ion-content>
+        <div class="row" ng-repeat="row in sections">
+        	<div class="col col-50 news" ng-repeat="news in row " ng-click="goTo(news)"
+    			 ng-if="news.thread.main_image && news.title">
+    			<img ng-src="{{news.thread.main_image}}" class="full-image">
+    			<h5 class="truncate">{{news.title}}</h5>
+    		</div>
+        </div>
+        <h4 class="text-center" ng-show="keys.length==0"> No saved articles ! </h4>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+{
+  "name": "news-bookmarks",
+  "version": "1.0.0",
+  "homepage": "https://github.com/SYNERGY-GB/news-bookmarks",
+  "authors": [
+    "Megazord <megazord@synergy-gb.com>"
+  ],
+  "main": "dist/news-bookmarks.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "Propietary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "megazord-framework": "git@github.com:SYNERGY-GB/megazord-framework.git#1.0"
+  }
+}
